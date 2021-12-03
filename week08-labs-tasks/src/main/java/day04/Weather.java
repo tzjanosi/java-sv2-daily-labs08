@@ -24,7 +24,7 @@ public class Weather {
         return dayWithMinDifference;
     }
     public void createWeatherListFromFile(Path path) {
-        List<String> allRecord = readFile(path);
+        allRecord = readFile(path);
         String record;
         for (int i = 2; i < allRecord.size() - 1; i++) {
             record = allRecord.get(i);
