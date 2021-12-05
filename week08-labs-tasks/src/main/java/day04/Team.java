@@ -27,7 +27,7 @@ public class Team {
         return 3*wins+1*drawns;
     }
     public int getAbsDifference() {
-        return Math.abs(points-goals);
+        return Math.abs(scores-goals);
     }
 
 

@@ -59,7 +59,7 @@ public class League {
         League league=new League();
         league.createTeamsListFromFile(Paths.get("src/main/resources/football.dat"));
         Team teamWithMinDifference=league.teamWithMinDifference();
-        System.out.println("Day wit minimal temperature difference: "+teamWithMinDifference.getName()+" Min difference: "+teamWithMinDifference.getAbsDifference());
+        System.out.println("Day wit minimal difference: "+teamWithMinDifference.getName()+" Min difference: "+teamWithMinDifference.getAbsDifference());
 
     }
 
@@ -67,6 +67,7 @@ public class League {
         Team teamWithMinDifference=teamsList.get(0);
         int minDifference=teamWithMinDifference.getAbsDifference();
         for(Team team:teamsList){
+            System.out.println(team.getAbsDifference());
             if(team.getAbsDifference()<minDifference){
                 teamWithMinDifference=team;
                 minDifference=teamWithMinDifference.getAbsDifference();
